@@ -1,0 +1,396 @@
+
+body {
+  padding:0; 
+  margin: 0;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding:0%;
+
+}
+::-webkit-scrollbar {
+  display:none;
+}
+
+.slide {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #1d1d1b;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.grid-element {
+  padding: 2px;
+  color: #fffefe;
+  border: 1px dashed #fffefe;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display:flex;
+}
+
+
+#main-icon:hover {
+  background-color: #fffefe;
+  color: black;
+}
+
+.grid-title:hover {
+  color: #1d1d1b;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#youtube:hover {
+  color: red;
+}
+#twitter:hover {
+  color: rgb(89, 166, 238);
+}
+.one {
+  background: #fffefe;
+  width: 95vw;
+}
+.two {
+  background: #1d1d1b;
+  width: 105vw;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #fffefe;
+  height: 100vh;
+}
+.three {
+  background:  #fffefe;
+  width: 100vw;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #1d1d1b;
+  font-weight: 800;
+}
+.four {
+  background: #1d1d1b;
+  width: 100vw;
+}
+
+.svg-image-second{
+  width: 40%;
+}
+.svg-image-three{
+  width: 90%;
+
+}
+.svg-image-sub{
+  width: 80%;
+}
+.main-buttons{
+  margin-left: 1em; 
+  background-color: #1d1d1b; padding: 5px; color: #fffefe; font-weight:600;
+}
+#two-main{
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  #second-title {
+    width: 85%; 
+    font-size: 1.5em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+    grid-auto-rows: minmax(10px, auto);
+    width: 90%;
+    margin-top: 5vh;
+  }
+  .grid-title{
+    font-size: 0.3em;
+  }
+  .svg-image{
+    width: 100%;
+  }
+  .one-container{
+    margin-left: 2.5vw; 
+    margin-top: 2vh; 
+    width: 90%;
+  }
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  #two-text{
+    font-size: 1em;
+  }
+  .two{
+    overflow-y: scroll;
+  }
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  .one{
+    width: 50%;
+  }
+  .two{
+    width: 50%;
+  }
+  .three{
+    width: 50%;
+  }
+  #subtitle {
+    font-weight: 400; 
+    font-size: 0.8em; 
+    margin-left: 1em; 
+    letter-spacing: 0.9px; 
+    word-spacing: -1px; 
+    width: 95%;
+  }
+  #second-title {
+    width: 85%; 
+    font-size: 2em;
+  }
+  #two-text{
+    font-weight: 400; 
+    font-size: 0.8em; 
+    margin-left: 0.5em; 
+    word-spacing: -1px; 
+    width: 88%;
+  }
+  #two-contain-grid {
+    align-items: center; 
+    align-content: center; 
+    margin-left: 1em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-auto-rows: minmax(30px, auto);
+    width: 90%;
+    margin-top: 5vh;
+  }
+  /* .grid-title{
+    font-size: 0.5em;
+  } */
+  .svg-image{
+    width: 95%;
+  }
+  .one-container{
+    margin-left: 2.5vw; 
+    margin-top: 2vh; 
+    width: 90%;
+  }
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  .svg-image{
+    width: 100%;
+  }
+  .one-container{
+    margin-left: 2.5vw; 
+    margin-top: 2vh; 
+    width: 90%;
+  }
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  #second-title {
+    width: 85%; 
+    font-size: 3em;
+  }
+  .svg-image{
+    width: 100%;
+  }
+  .one-container{
+    margin-left: 2.5vw; 
+    margin-top: 2vh; 
+    width: 90%;
+  }
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+  }
+  #two-text{
+    font-size: 1em; 
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  #subtitle {
+    width: 50%;
+  }
+  #second-title {
+    width: 85%; 
+    font-size: 2em;
+  }
+  #two-text{
+    font-weight: 400; 
+    font-size: 0.5em; 
+    margin-left: 0.5em; 
+    word-spacing: -1px; 
+    width: 88%;
+  }
+  #two-contain-grid {
+    align-items: center; 
+    align-content: center; 
+    margin-left: 3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: minmax(80px, auto);
+    width: 85%;
+    margin-top: 5vh;
+    margin-left: 2.5em;
+  }
+  .grid-title{
+    font-size: 1.1em;
+  }
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    margin-left: 2vw;
+    margin-top: 4vh;
+  }
+  .svg-image{
+    width: 50%;
+  }
+
+}
+
+
+/* iPhone 4 - 5s ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media
+only screen and (max-device-width: 667px), 
+only screen and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media
+only screen and (min-device-width : 414px), 
+only screen and (-webkit-device-pixel-ratio: 3) {
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: minmax(80px, auto);
+    width: 85%;
+    margin-top: 5vh;
+    margin-left: 2.5em;
+  }
+  #subtitle {
+    width: 50%;
+  }
+}
+
+/* Samsung Galaxy S7 Edge ----------- */
+@media only screen
+and (-webkit-min-device-pixel-ratio: 3)
+and (min-resolution: 192dpi)and (max-width:640px) {
+ /* Styles */
+}
+
+/* .one-container{
+  margin-left: 2.5vw; 
+  margin-top: 2vh; 
+  width: 50%;
+} */
+
+

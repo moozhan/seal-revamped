@@ -117,74 +117,40 @@ and (min-width : 1224px) {
 
 
 /* Smartphones (portrait) ----------- */
-/* @media only screen 
+@media only screen 
 and (max-width : 320px) {
-  .grid-container{
-    margin-top:3vh;
-    width: 100vw;
-    height: 94vh;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  #paragraph {
-    width: 90%; 
-    text-align: justify;
-  }
-  .grid-item-even{
-    padding-left: 0em;
-  }
-  .grid-item-odd{
-    padding-right: 0em;
-  }
-} */
+h1{
+  font-size: 0.8em;
+}
+.svg-image-collection{
+  width: 80%;
+  margin-top: 9vh;
+}
+}
 
 /* Smartphones (portrait and landscape) ----------- */
-/* @media only screen 
+@media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-    .grid-container{
-      margin-top: 4vh;
-        width: 100vw;
-        height: 96vh;
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-    
-    #paragraph {
-      width: 90%; 
-      text-align: justify;
-    }
-    .grid-item-even{
-      padding-left: 0em;
-    }
-    .grid-item-odd{
-      padding-right: 0em;
-    }
+  h1{
+    font-size: 1em;
+  }
+  .svg-image-collection{
+    width: 100%;
+    margin-top: 9vh;
+  }
       
-} */
+}
 
 /* iPads (portrait and landscape) ----------- */
-/* @media only screen 
+@media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-  .grid-container{
-    margin-top: 4vh;
-    width: 100vw;
-    height: 96vh;
-    display: grid;
-    grid-template-columns: 1fr;
+  h1{
+    font-size: 1em;
   }
-
-  #paragraph {
-    width: 90%; 
-    text-align: justify;
-
+  .svg-image-collection{
+    width: 80%;
+    margin-top: 9vh;
   }
-  .grid-item-even{
-    padding-left: 0em;
-  }
-  .grid-item-odd{
-    padding-right: 0em;
-  }
-} */
+}

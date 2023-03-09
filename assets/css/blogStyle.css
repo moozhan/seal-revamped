@@ -74,6 +74,7 @@ td, th {
   background: #ddd;
   color: black;
 }
+
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
@@ -94,6 +95,15 @@ and (max-width : 320px) {
   }
   .grid-item-odd{
     padding-right: 0em;
+  }
+  h1{
+    font-size: 1.4em;
+  }
+  .twoslide{
+    width: 75%;
+  }
+  .socialmedia{
+    width: 98%;
   }
 }
 
@@ -119,7 +129,15 @@ and (max-device-width : 480px) {
     .grid-item-odd{
       padding-right: 0em;
     }
-      
+    h1{
+      font-size: 1.4em;
+    }
+    .twoslide{
+      width: 75%;
+    }
+    .socialmedia{
+      width: 98%;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -144,5 +162,11 @@ and (max-device-width : 1024px) {
   }
   .grid-item-odd{
     padding-right: 0em;
+  }
+  .twoslide{
+    width: 75%;
+  }
+  .socialmedia{
+    width: 98%;
   }
 }

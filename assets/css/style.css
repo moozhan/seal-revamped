@@ -36,15 +36,33 @@ body {
 .grid-element {
   padding: 2px;
   color: #fffefe;
-  border: 1px dashed #fffefe;
+  border: 1px dashed #646464;
   align-items: center;
   justify-content: center;
   text-align: center;
   display:flex;
 }
 
+table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td, th {
+  border: 1px dashed #fffefe;
+  text-align: left;
+  padding: 8px;
+  font-size: 0.4em;
+  background-color: #1d1d1b;
+}
+
 
 #main-icon:hover {
+  background-color: #fffefe;
+  color: black;
+}
+
+.turnlight:hover {
   background-color: #fffefe;
   color: black;
 }
@@ -100,14 +118,14 @@ a{
   margin-left: 1em; 
   background-color: #1d1d1b; padding: 5px; color: #fffefe; font-weight:600;
 }
-#two-main{
+/* #two-main{
   padding: 1em;
   display: grid;
   grid-template-columns: 2fr 2fr;
   justify-content: center;
   align-items: center;
 
-}
+} */
 
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -120,10 +138,9 @@ and (max-device-width : 480px) {
   }
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
-    grid-auto-rows: minmax(10px, auto);
-    width: 90%;
-    margin-top: 5vh;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-auto-rows: minmax(30px, auto);
+    width: 100%;
   }
   .grid-title{
     font-size: 0.3em;
@@ -148,6 +165,13 @@ and (max-device-width : 480px) {
   }
   .two{
     overflow-y: scroll;
+  }
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -178,10 +202,11 @@ and (min-width : 321px) {
   }
   #two-text{
     font-weight: 400; 
-    font-size: 0.8em; 
+    font-size: 1em; 
     margin-left: 0.5em; 
     word-spacing: -1px; 
     width: 88%;
+    
   }
   #two-contain-grid {
     align-items: center; 
@@ -191,9 +216,9 @@ and (min-width : 321px) {
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
     grid-auto-rows: minmax(30px, auto);
-    width: 90%;
+    width: 99%;
     margin-top: 5vh;
   }
   /* .grid-title{
@@ -260,7 +285,7 @@ and (max-device-width : 1024px) {
   #two-main{
     padding: 1em;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
   }
@@ -274,7 +299,13 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 2fr;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* iPads (portrait) ----------- */
@@ -282,13 +313,25 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
-  /* Styles */
+  #two-main{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Large screens ----------- */
@@ -303,10 +346,10 @@ and (min-width : 1824px) {
   }
   #two-text{
     font-weight: 400; 
-    font-size: 0.5em; 
+    font-size: 0.45em; 
     margin-left: 0.5em; 
     word-spacing: -1px; 
-    width: 88%;
+    width: 80%;
   }
   #two-contain-grid {
     align-items: center; 
@@ -316,11 +359,10 @@ and (min-width : 1824px) {
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-auto-rows: minmax(80px, auto);
-    width: 85%;
+    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+    grid-auto-rows: minmax(30px, auto);
+    width: 99%;
     margin-top: 5vh;
-    margin-left: 2.5em;
   }
   .grid-title{
     font-size: 1.1em;
@@ -342,55 +384,5 @@ and (min-width : 1824px) {
 }
 
 
-/* iPhone 4 - 5s ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-  /* Styles */
-}
-
-/* iPhone 6 ----------- */
-@media
-only screen and (max-device-width: 667px), 
-only screen and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-/* iPhone 6+ ----------- */
-@media
-only screen and (min-device-width : 414px), 
-only screen and (-webkit-device-pixel-ratio: 3) {
-  #two-main{
-    padding: 1em;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    justify-content: center;
-    align-items: center;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-auto-rows: minmax(80px, auto);
-    width: 85%;
-    margin-top: 5vh;
-    margin-left: 2.5em;
-  }
-  #subtitle {
-    width: 50%;
-  }
-}
-
-/* Samsung Galaxy S7 Edge ----------- */
-@media only screen
-and (-webkit-min-device-pixel-ratio: 3)
-and (min-resolution: 192dpi)and (max-width:640px) {
- /* Styles */
-}
-
-/* .one-container{
-  margin-left: 2.5vw; 
-  margin-top: 2vh; 
-  width: 50%;
-} */
 
 

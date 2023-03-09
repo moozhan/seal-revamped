@@ -200,6 +200,7 @@ and (min-width : 321px) {
       grid-template-columns: 1fr;
     }
 }
+/* Large screens ----------- */
 
 @media only screen 
 and (min-width : 1824px) {
@@ -211,5 +212,11 @@ and (min-width : 1824px) {
     align-items: center;
     margin-top:3vh;
     height: 94vh;
+  }
+  .grid-item-even{
+    padding-left: 15em;
+  }
+  .grid-item-odd{
+    padding-right: 15em;
   }
 }
